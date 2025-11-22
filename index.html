@@ -98,10 +98,27 @@
   <div class="contact-box">
     <form action="https://formsubmit.co/umerfarooq380380@gmail.com" method="POST">
   <input type="hidden" name="_captcha" value="false">
+
+  <!-- SMS Confirmation & Customer Info -->
+  <input type="hidden" name="_subject" value="New Water Order Received 🚚💧">
+  <input type="hidden" name="_autoresponse" value="Thanks for your order! You will receive confirmation soon. Delivery all Karachi — M. Noor Water Supplier 🚚💧">
   
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="text" name="phone" placeholder="Your Phone Number" required>
-  <textarea name="order_details" rows="4" placeholder="Your Order Details"></textarea>
+  <!-- Customer Fields -->
+  <input type="text" name="Customer Name" placeholder="Your Name" required>
+  <input type="text" name="Customer Phone" placeholder="Your Phone Number" required>
+
+  <!-- Delivery Area -->
+  <select name="Delivery Area" required>
+    <option value="">Select Delivery Area</option>
+    <option>bath island</option>
+    <option>civil line</option>
+    <option>cantt</option>
+    <option>hijrat colony</option>
+    <option>board basin</option>
+  </select>
+
+  <!-- Order Details -->
+  <textarea name="Order Details" rows="4" placeholder="Your Order Details"></textarea>
 
   <button type="submit">Send Order</button>
     </form>
