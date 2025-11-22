@@ -96,11 +96,14 @@
   <div class="underline"></div>
 
   <div class="contact-box">
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="text" placeholder="Your Phone Number" required>
-      <textarea rows="4" placeholder="Your Order Details"></textarea>
-      <button type="submit">Send Order</button>
+    <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+  <input type="hidden" name="_captcha" value="false">
+  
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="text" name="phone" placeholder="Your Phone Number" required>
+  <textarea name="order_details" rows="4" placeholder="Your Order Details"></textarea>
+
+  <button type="submit">Send Order</button>
     </form>
 
     <br>
